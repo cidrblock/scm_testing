@@ -1,0 +1,66 @@
+branch_name: ansible-localhost-2022-06-05T153456.219194+0000
+branches:
+- main
+- main
+- main
+changed: true
+failed: false
+msg: 'Successfully retrieved repository: git@github.com:cidrblock/scm_testing.git'
+name: scm_testing
+output:
+-   command: git -C /tmp/tmpryxsefmk clone --depth=1 --progress --no-single-branch
+        git@github.com:cidrblock/scm_testing.git
+    return_code: 0
+    stderr_lines:
+    - Cloning into 'scm_testing'...
+    - 'remote: Enumerating objects: 5, done.        '
+    - 'remote: Counting objects:  20% (1/5)        '
+    - 'remote: Counting objects:  40% (2/5)        '
+    - 'remote: Counting objects:  60% (3/5)        '
+    - 'remote: Counting objects:  80% (4/5)        '
+    - 'remote: Counting objects: 100% (5/5)        '
+    - 'remote: Counting objects: 100% (5/5), done.        '
+    - 'remote: Compressing objects:  20% (1/5)        '
+    - 'remote: Compressing objects:  40% (2/5)        '
+    - 'remote: Compressing objects:  60% (3/5)        '
+    - 'remote: Compressing objects:  80% (4/5)        '
+    - 'remote: Compressing objects: 100% (5/5)        '
+    - 'remote: Compressing objects: 100% (5/5), done.        '
+    - 'remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0        '
+    - 'Receiving objects:  20% (1/5)'
+    - 'Receiving objects:  40% (2/5)'
+    - 'Receiving objects:  60% (3/5)'
+    - 'Receiving objects:  80% (4/5)'
+    - 'Receiving objects: 100% (5/5)'
+    - 'Receiving objects: 100% (5/5), 13.58 KiB | 13.58 MiB/s, done.'
+    stdout_lines: []
+-   command: git -C /tmp/tmpryxsefmk/scm_testing branch -a
+    return_code: 0
+    stderr_lines: []
+    stdout_lines:
+    - '* main'
+    - '  remotes/origin/HEAD -> origin/main'
+    - '  remotes/origin/main'
+-   command: git -C /tmp/tmpryxsefmk/scm_testing checkout -t -b ansible-localhost-2022-06-05T153456.219194+0000
+    return_code: 0
+    stderr_lines:
+    - Switched to a new branch 'ansible-localhost-2022-06-05T153456.219194+0000'
+    stdout_lines:
+    - Branch 'ansible-localhost-2022-06-05T153456.219194+0000' set up to track local
+        branch 'main'.
+-   command: git -C /tmp/tmpryxsefmk/scm_testing remote add upstream git@github.com:ansible-network/scm_testing.git
+    return_code: 0
+    stderr_lines: []
+    stdout_lines: []
+-   command: git -C /tmp/tmpryxsefmk/scm_testing pull upstream main --rebase
+    return_code: 0
+    stderr_lines:
+    - From github.com:ansible-network/scm_testing
+    - ' * branch            main       -> FETCH_HEAD'
+    - ' * [new branch]      main       -> upstream/main'
+    stdout_lines:
+    - Updating 17212e0..6abefd2
+    - Fast-forward
+    - ' README.md | 4 ++++'
+    - ' 1 file changed, 4 insertions(+)'
+path: /tmp/tmpryxsefmk/scm_testing
