@@ -1,0 +1,96 @@
+branch_name: ansible-localhost-2022-06-07T124243.318947+0000
+branches:
+- main
+- main
+- ansible-localhost-2022-06-05T153456.219194+0000
+- ansible-localhost-2022-06-07T123730.364737+0000
+- main
+changed: true
+failed: false
+msg: 'Successfully retrieved repository: git@github.com:cidrblock/scm_testing.git'
+name: scm_testing
+output:
+-   command: git -C /tmp/tmphmyw58jy clone --depth=1 --progress --no-single-branch
+        git@github.com:cidrblock/scm_testing.git
+    return_code: 0
+    stderr_lines:
+    - Cloning into 'scm_testing'...
+    - 'remote: Enumerating objects: 12, done.        '
+    - 'remote: Counting objects:   8% (1/12)        '
+    - 'remote: Counting objects:  16% (2/12)        '
+    - 'remote: Counting objects:  25% (3/12)        '
+    - 'remote: Counting objects:  33% (4/12)        '
+    - 'remote: Counting objects:  41% (5/12)        '
+    - 'remote: Counting objects:  50% (6/12)        '
+    - 'remote: Counting objects:  58% (7/12)        '
+    - 'remote: Counting objects:  66% (8/12)        '
+    - 'remote: Counting objects:  75% (9/12)        '
+    - 'remote: Counting objects:  83% (10/12)        '
+    - 'remote: Counting objects:  91% (11/12)        '
+    - 'remote: Counting objects: 100% (12/12)        '
+    - 'remote: Counting objects: 100% (12/12), done.        '
+    - 'remote: Compressing objects:  10% (1/10)        '
+    - 'remote: Compressing objects:  20% (2/10)        '
+    - 'remote: Compressing objects:  30% (3/10)        '
+    - 'remote: Compressing objects:  40% (4/10)        '
+    - 'remote: Compressing objects:  50% (5/10)        '
+    - 'remote: Compressing objects:  60% (6/10)        '
+    - 'remote: Compressing objects:  70% (7/10)        '
+    - 'remote: Compressing objects:  80% (8/10)        '
+    - 'remote: Compressing objects:  90% (9/10)        '
+    - 'remote: Compressing objects: 100% (10/10)        '
+    - 'remote: Compressing objects: 100% (10/10), done.        '
+    - 'Receiving objects:   8% (1/12)'
+    - 'Receiving objects:  16% (2/12)'
+    - 'Receiving objects:  25% (3/12)'
+    - 'Receiving objects:  33% (4/12)'
+    - 'Receiving objects:  41% (5/12)'
+    - 'Receiving objects:  50% (6/12)'
+    - 'remote: Total 12 (delta 5), reused 5 (delta 2), pack-reused 0        '
+    - 'Receiving objects:  58% (7/12)'
+    - 'Receiving objects:  66% (8/12)'
+    - 'Receiving objects:  75% (9/12)'
+    - 'Receiving objects:  83% (10/12)'
+    - 'Receiving objects:  91% (11/12)'
+    - 'Receiving objects: 100% (12/12)'
+    - 'Receiving objects: 100% (12/12), 15.16 KiB | 15.16 MiB/s, done.'
+    - 'Resolving deltas:   0% (0/5)'
+    - 'Resolving deltas:  20% (1/5)'
+    - 'Resolving deltas:  40% (2/5)'
+    - 'Resolving deltas:  60% (3/5)'
+    - 'Resolving deltas:  80% (4/5)'
+    - 'Resolving deltas: 100% (5/5)'
+    - 'Resolving deltas: 100% (5/5), done.'
+    stdout_lines: []
+-   command: git -C /tmp/tmphmyw58jy/scm_testing branch -a
+    return_code: 0
+    stderr_lines: []
+    stdout_lines:
+    - '* main'
+    - '  remotes/origin/HEAD -> origin/main'
+    - '  remotes/origin/ansible-localhost-2022-06-05T153456.219194+0000'
+    - '  remotes/origin/ansible-localhost-2022-06-07T123730.364737+0000'
+    - '  remotes/origin/main'
+-   command: git -C /tmp/tmphmyw58jy/scm_testing checkout -t -b ansible-localhost-2022-06-07T124243.318947+0000
+    return_code: 0
+    stderr_lines:
+    - Switched to a new branch 'ansible-localhost-2022-06-07T124243.318947+0000'
+    stdout_lines:
+    - Branch 'ansible-localhost-2022-06-07T124243.318947+0000' set up to track local
+        branch 'main'.
+-   command: git -C /tmp/tmphmyw58jy/scm_testing remote add upstream git@github.com:ansible-network/scm_testing.git
+    return_code: 0
+    stderr_lines: []
+    stdout_lines: []
+-   command: git -C /tmp/tmphmyw58jy/scm_testing pull upstream main --rebase
+    return_code: 0
+    stderr_lines:
+    - From github.com:ansible-network/scm_testing
+    - ' * branch            main       -> FETCH_HEAD'
+    - ' * [new branch]      main       -> upstream/main'
+    stdout_lines:
+    - Updating 17212e0..6abefd2
+    - Fast-forward
+    - ' README.md | 4 ++++'
+    - ' 1 file changed, 4 insertions(+)'
+path: /tmp/tmphmyw58jy/scm_testing
