@@ -1,0 +1,84 @@
+branch_name: ansible-localhost-2022-06-07T123730.364737+0000
+branches:
+- main
+- main
+- ansible-localhost-2022-06-05T153456.219194+0000
+- main
+changed: true
+failed: false
+msg: 'Successfully retrieved repository: git@github.com:cidrblock/scm_testing.git'
+name: scm_testing
+output:
+-   command: git -C /tmp/tmpp80el7_g clone --depth=1 --progress --no-single-branch
+        git@github.com:cidrblock/scm_testing.git
+    return_code: 0
+    stderr_lines:
+    - Cloning into 'scm_testing'...
+    - 'remote: Enumerating objects: 9, done.        '
+    - 'remote: Counting objects:  11% (1/9)        '
+    - 'remote: Counting objects:  22% (2/9)        '
+    - 'remote: Counting objects:  33% (3/9)        '
+    - 'remote: Counting objects:  44% (4/9)        '
+    - 'remote: Counting objects:  55% (5/9)        '
+    - 'remote: Counting objects:  66% (6/9)        '
+    - 'remote: Counting objects:  77% (7/9)        '
+    - 'remote: Counting objects:  88% (8/9)        '
+    - 'remote: Counting objects: 100% (9/9)        '
+    - 'remote: Counting objects: 100% (9/9), done.        '
+    - 'remote: Compressing objects:  11% (1/9)        '
+    - 'remote: Compressing objects:  22% (2/9)        '
+    - 'remote: Compressing objects:  33% (3/9)        '
+    - 'remote: Compressing objects:  44% (4/9)        '
+    - 'remote: Compressing objects:  55% (5/9)        '
+    - 'remote: Compressing objects:  66% (6/9)        '
+    - 'remote: Compressing objects:  77% (7/9)        '
+    - 'remote: Compressing objects:  88% (8/9)        '
+    - 'remote: Compressing objects: 100% (9/9)        '
+    - 'remote: Compressing objects: 100% (9/9), done.        '
+    - 'Receiving objects:  11% (1/9)'
+    - 'Receiving objects:  22% (2/9)'
+    - 'Receiving objects:  33% (3/9)'
+    - 'Receiving objects:  44% (4/9)'
+    - 'remote: Total 9 (delta 2), reused 2 (delta 0), pack-reused 0        '
+    - 'Receiving objects:  55% (5/9)'
+    - 'Receiving objects:  66% (6/9)'
+    - 'Receiving objects:  77% (7/9)'
+    - 'Receiving objects:  88% (8/9)'
+    - 'Receiving objects: 100% (9/9)'
+    - 'Receiving objects: 100% (9/9), 14.56 KiB | 7.28 MiB/s, done.'
+    - 'Resolving deltas:   0% (0/2)'
+    - 'Resolving deltas:  50% (1/2)'
+    - 'Resolving deltas: 100% (2/2)'
+    - 'Resolving deltas: 100% (2/2), done.'
+    stdout_lines: []
+-   command: git -C /tmp/tmpp80el7_g/scm_testing branch -a
+    return_code: 0
+    stderr_lines: []
+    stdout_lines:
+    - '* main'
+    - '  remotes/origin/HEAD -> origin/main'
+    - '  remotes/origin/ansible-localhost-2022-06-05T153456.219194+0000'
+    - '  remotes/origin/main'
+-   command: git -C /tmp/tmpp80el7_g/scm_testing checkout -t -b ansible-localhost-2022-06-07T123730.364737+0000
+    return_code: 0
+    stderr_lines:
+    - Switched to a new branch 'ansible-localhost-2022-06-07T123730.364737+0000'
+    stdout_lines:
+    - Branch 'ansible-localhost-2022-06-07T123730.364737+0000' set up to track local
+        branch 'main'.
+-   command: git -C /tmp/tmpp80el7_g/scm_testing remote add upstream git@github.com:ansible-network/scm_testing.git
+    return_code: 0
+    stderr_lines: []
+    stdout_lines: []
+-   command: git -C /tmp/tmpp80el7_g/scm_testing pull upstream main --rebase
+    return_code: 0
+    stderr_lines:
+    - From github.com:ansible-network/scm_testing
+    - ' * branch            main       -> FETCH_HEAD'
+    - ' * [new branch]      main       -> upstream/main'
+    stdout_lines:
+    - Updating 17212e0..6abefd2
+    - Fast-forward
+    - ' README.md | 4 ++++'
+    - ' 1 file changed, 4 insertions(+)'
+path: /tmp/tmpp80el7_g/scm_testing
