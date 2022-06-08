@@ -1,0 +1,119 @@
+branch_name: ansible-localhost-2022-06-08T071446.140280-0700
+branches:
+- main
+- main
+- ansible-localhost-2022-06-05T153456.219194+0000
+- ansible-localhost-2022-06-07T123730.364737+0000
+- ansible-localhost-2022-06-07T124243.318947+0000
+- ansible-localhost-2022-06-08T141340.539776+0000
+- main
+changed: true
+failed: false
+msg: 'Successfully retrieved repository: git@github.com:cidrblock/scm_testing.git'
+name: scm_testing
+output:
+-   command: git -C /tmp/tmpumncce_s clone --depth=1 --progress --no-single-branch
+        git@github.com:cidrblock/scm_testing.git
+    return_code: 0
+    stderr_lines:
+    - Cloning into 'scm_testing'...
+    - 'remote: Enumerating objects: 18, done.        '
+    - 'remote: Counting objects:   5% (1/18)        '
+    - 'remote: Counting objects:  11% (2/18)        '
+    - 'remote: Counting objects:  16% (3/18)        '
+    - 'remote: Counting objects:  22% (4/18)        '
+    - 'remote: Counting objects:  27% (5/18)        '
+    - 'remote: Counting objects:  33% (6/18)        '
+    - 'remote: Counting objects:  38% (7/18)        '
+    - 'remote: Counting objects:  44% (8/18)        '
+    - 'remote: Counting objects:  50% (9/18)        '
+    - 'remote: Counting objects:  55% (10/18)        '
+    - 'remote: Counting objects:  61% (11/18)        '
+    - 'remote: Counting objects:  66% (12/18)        '
+    - 'remote: Counting objects:  72% (13/18)        '
+    - 'remote: Counting objects:  77% (14/18)        '
+    - 'remote: Counting objects:  83% (15/18)        '
+    - 'remote: Counting objects:  88% (16/18)        '
+    - 'remote: Counting objects:  94% (17/18)        '
+    - 'remote: Counting objects: 100% (18/18)        '
+    - 'remote: Counting objects: 100% (18/18), done.        '
+    - 'remote: Compressing objects:   8% (1/12)        '
+    - 'remote: Compressing objects:  16% (2/12)        '
+    - 'remote: Compressing objects:  25% (3/12)        '
+    - 'remote: Compressing objects:  33% (4/12)        '
+    - 'remote: Compressing objects:  41% (5/12)        '
+    - 'remote: Compressing objects:  50% (6/12)        '
+    - 'remote: Compressing objects:  58% (7/12)        '
+    - 'remote: Compressing objects:  66% (8/12)        '
+    - 'remote: Compressing objects:  75% (9/12)        '
+    - 'remote: Compressing objects:  83% (10/12)        '
+    - 'remote: Compressing objects:  91% (11/12)        '
+    - 'remote: Compressing objects: 100% (12/12)        '
+    - 'remote: Compressing objects: 100% (12/12), done.        '
+    - 'Receiving objects:   5% (1/18)'
+    - 'Receiving objects:  11% (2/18)'
+    - 'Receiving objects:  16% (3/18)'
+    - 'Receiving objects:  22% (4/18)'
+    - 'Receiving objects:  27% (5/18)'
+    - 'Receiving objects:  33% (6/18)'
+    - 'Receiving objects:  38% (7/18)'
+    - 'Receiving objects:  44% (8/18)'
+    - 'remote: Total 18 (delta 11), reused 9 (delta 6), pack-reused 0        '
+    - 'Receiving objects:  50% (9/18)'
+    - 'Receiving objects:  55% (10/18)'
+    - 'Receiving objects:  61% (11/18)'
+    - 'Receiving objects:  66% (12/18)'
+    - 'Receiving objects:  72% (13/18)'
+    - 'Receiving objects:  77% (14/18)'
+    - 'Receiving objects:  83% (15/18)'
+    - 'Receiving objects:  88% (16/18)'
+    - 'Receiving objects:  94% (17/18)'
+    - 'Receiving objects: 100% (18/18)'
+    - 'Receiving objects: 100% (18/18), 16.37 KiB | 5.46 MiB/s, done.'
+    - 'Resolving deltas:   0% (0/11)'
+    - 'Resolving deltas:   9% (1/11)'
+    - 'Resolving deltas:  18% (2/11)'
+    - 'Resolving deltas:  27% (3/11)'
+    - 'Resolving deltas:  36% (4/11)'
+    - 'Resolving deltas:  45% (5/11)'
+    - 'Resolving deltas:  54% (6/11)'
+    - 'Resolving deltas:  63% (7/11)'
+    - 'Resolving deltas:  72% (8/11)'
+    - 'Resolving deltas:  81% (9/11)'
+    - 'Resolving deltas:  90% (10/11)'
+    - 'Resolving deltas: 100% (11/11)'
+    - 'Resolving deltas: 100% (11/11), done.'
+    stdout_lines: []
+-   command: git -C /tmp/tmpumncce_s/scm_testing branch -a
+    return_code: 0
+    stderr_lines: []
+    stdout_lines:
+    - '* main'
+    - '  remotes/origin/HEAD -> origin/main'
+    - '  remotes/origin/ansible-localhost-2022-06-05T153456.219194+0000'
+    - '  remotes/origin/ansible-localhost-2022-06-07T123730.364737+0000'
+    - '  remotes/origin/ansible-localhost-2022-06-07T124243.318947+0000'
+    - '  remotes/origin/ansible-localhost-2022-06-08T141340.539776+0000'
+    - '  remotes/origin/main'
+-   command: git -C /tmp/tmpumncce_s/scm_testing checkout -t -b ansible-localhost-2022-06-08T071446.140280-0700
+    return_code: 0
+    stderr_lines:
+    - Switched to a new branch 'ansible-localhost-2022-06-08T071446.140280-0700'
+    stdout_lines:
+    - branch 'ansible-localhost-2022-06-08T071446.140280-0700' set up to track 'main'.
+-   command: git -C /tmp/tmpumncce_s/scm_testing remote add upstream git@github.com:ansible-network/scm_testing.git
+    return_code: 0
+    stderr_lines: []
+    stdout_lines: []
+-   command: git -C /tmp/tmpumncce_s/scm_testing pull upstream main --rebase
+    return_code: 0
+    stderr_lines:
+    - From github.com:ansible-network/scm_testing
+    - ' * branch            main       -> FETCH_HEAD'
+    - ' * [new branch]      main       -> upstream/main'
+    stdout_lines:
+    - Updating 17212e0..6abefd2
+    - Fast-forward
+    - ' README.md | 4 ++++'
+    - ' 1 file changed, 4 insertions(+)'
+path: /tmp/tmpumncce_s/scm_testing
