@@ -1,0 +1,225 @@
+branch_name: ansible-localhost-2022-06-08T115734.153818-0700
+branches:
+- main
+- main
+- ansible-localhost-2022-06-05T153456.219194+0000
+- ansible-localhost-2022-06-07T123730.364737+0000
+- ansible-localhost-2022-06-07T124243.318947+0000
+- ansible-localhost-2022-06-08T071446.140280-0700
+- ansible-localhost-2022-06-08T071633.254577-0700
+- ansible-localhost-2022-06-08T102013.660657-0700
+- ansible-localhost-2022-06-08T105116.409325-0700
+- ansible-localhost-2022-06-08T111648.224739-0700
+- ansible-localhost-2022-06-08T111724.998653-0700
+- ansible-localhost-2022-06-08T111743.552733-0700
+- ansible-localhost-2022-06-08T115658.088120-0700
+- ansible-localhost-2022-06-08T115714.338961-0700
+- ansible-localhost-2022-06-08T141340.539776+0000
+- main
+changed: true
+failed: false
+msg: 'Successfully retrieved repository: git@github.com:cidrblock/scm_testing.git'
+name: scm_testing
+output:
+-   command: git -C /tmp/tmp4xl1j26n clone --depth=1 --progress --no-single-branch
+        git@github.com:cidrblock/scm_testing.git
+    return_code: 0
+    stderr_lines:
+    - Cloning into 'scm_testing'...
+    - 'remote: Enumerating objects: 45, done.        '
+    - 'remote: Counting objects:   2% (1/45)        '
+    - 'remote: Counting objects:   4% (2/45)        '
+    - 'remote: Counting objects:   6% (3/45)        '
+    - 'remote: Counting objects:   8% (4/45)        '
+    - 'remote: Counting objects:  11% (5/45)        '
+    - 'remote: Counting objects:  13% (6/45)        '
+    - 'remote: Counting objects:  15% (7/45)        '
+    - 'remote: Counting objects:  17% (8/45)        '
+    - 'remote: Counting objects:  20% (9/45)        '
+    - 'remote: Counting objects:  22% (10/45)        '
+    - 'remote: Counting objects:  24% (11/45)        '
+    - 'remote: Counting objects:  26% (12/45)        '
+    - 'remote: Counting objects:  28% (13/45)        '
+    - 'remote: Counting objects:  31% (14/45)        '
+    - 'remote: Counting objects:  33% (15/45)        '
+    - 'remote: Counting objects:  35% (16/45)        '
+    - 'remote: Counting objects:  37% (17/45)        '
+    - 'remote: Counting objects:  40% (18/45)        '
+    - 'remote: Counting objects:  42% (19/45)        '
+    - 'remote: Counting objects:  44% (20/45)        '
+    - 'remote: Counting objects:  46% (21/45)        '
+    - 'remote: Counting objects:  48% (22/45)        '
+    - 'remote: Counting objects:  51% (23/45)        '
+    - 'remote: Counting objects:  53% (24/45)        '
+    - 'remote: Counting objects:  55% (25/45)        '
+    - 'remote: Counting objects:  57% (26/45)        '
+    - 'remote: Counting objects:  60% (27/45)        '
+    - 'remote: Counting objects:  62% (28/45)        '
+    - 'remote: Counting objects:  64% (29/45)        '
+    - 'remote: Counting objects:  66% (30/45)        '
+    - 'remote: Counting objects:  68% (31/45)        '
+    - 'remote: Counting objects:  71% (32/45)        '
+    - 'remote: Counting objects:  73% (33/45)        '
+    - 'remote: Counting objects:  75% (34/45)        '
+    - 'remote: Counting objects:  77% (35/45)        '
+    - 'remote: Counting objects:  80% (36/45)        '
+    - 'remote: Counting objects:  82% (37/45)        '
+    - 'remote: Counting objects:  84% (38/45)        '
+    - 'remote: Counting objects:  86% (39/45)        '
+    - 'remote: Counting objects:  88% (40/45)        '
+    - 'remote: Counting objects:  91% (41/45)        '
+    - 'remote: Counting objects:  93% (42/45)        '
+    - 'remote: Counting objects:  95% (43/45)        '
+    - 'remote: Counting objects:  97% (44/45)        '
+    - 'remote: Counting objects: 100% (45/45)        '
+    - 'remote: Counting objects: 100% (45/45), done.        '
+    - 'remote: Compressing objects:   4% (1/21)        '
+    - 'remote: Compressing objects:   9% (2/21)        '
+    - 'remote: Compressing objects:  14% (3/21)        '
+    - 'remote: Compressing objects:  19% (4/21)        '
+    - 'remote: Compressing objects:  23% (5/21)        '
+    - 'remote: Compressing objects:  28% (6/21)        '
+    - 'remote: Compressing objects:  33% (7/21)        '
+    - 'remote: Compressing objects:  38% (8/21)        '
+    - 'remote: Compressing objects:  42% (9/21)        '
+    - 'remote: Compressing objects:  47% (10/21)        '
+    - 'remote: Compressing objects:  52% (11/21)        '
+    - 'remote: Compressing objects:  57% (12/21)        '
+    - 'remote: Compressing objects:  61% (13/21)        '
+    - 'remote: Compressing objects:  66% (14/21)        '
+    - 'remote: Compressing objects:  71% (15/21)        '
+    - 'remote: Compressing objects:  76% (16/21)        '
+    - 'remote: Compressing objects:  80% (17/21)        '
+    - 'remote: Compressing objects:  85% (18/21)        '
+    - 'remote: Compressing objects:  90% (19/21)        '
+    - 'remote: Compressing objects:  95% (20/21)        '
+    - 'remote: Compressing objects: 100% (21/21)        '
+    - 'remote: Compressing objects: 100% (21/21), done.        '
+    - 'Receiving objects:   2% (1/45)'
+    - 'Receiving objects:   4% (2/45)'
+    - 'Receiving objects:   6% (3/45)'
+    - 'Receiving objects:   8% (4/45)'
+    - 'Receiving objects:  11% (5/45)'
+    - 'Receiving objects:  13% (6/45)'
+    - 'Receiving objects:  15% (7/45)'
+    - 'Receiving objects:  17% (8/45)'
+    - 'Receiving objects:  20% (9/45)'
+    - 'Receiving objects:  22% (10/45)'
+    - 'Receiving objects:  24% (11/45)'
+    - 'Receiving objects:  26% (12/45)'
+    - 'Receiving objects:  28% (13/45)'
+    - 'Receiving objects:  31% (14/45)'
+    - 'Receiving objects:  33% (15/45)'
+    - 'Receiving objects:  35% (16/45)'
+    - 'Receiving objects:  37% (17/45)'
+    - 'Receiving objects:  40% (18/45)'
+    - 'Receiving objects:  42% (19/45)'
+    - 'Receiving objects:  44% (20/45)'
+    - 'remote: Total 45 (delta 36), reused 29 (delta 24), pack-reused 0        '
+    - 'Receiving objects:  46% (21/45)'
+    - 'Receiving objects:  48% (22/45)'
+    - 'Receiving objects:  51% (23/45)'
+    - 'Receiving objects:  53% (24/45)'
+    - 'Receiving objects:  55% (25/45)'
+    - 'Receiving objects:  57% (26/45)'
+    - 'Receiving objects:  60% (27/45)'
+    - 'Receiving objects:  62% (28/45)'
+    - 'Receiving objects:  64% (29/45)'
+    - 'Receiving objects:  66% (30/45)'
+    - 'Receiving objects:  68% (31/45)'
+    - 'Receiving objects:  71% (32/45)'
+    - 'Receiving objects:  73% (33/45)'
+    - 'Receiving objects:  75% (34/45)'
+    - 'Receiving objects:  77% (35/45)'
+    - 'Receiving objects:  80% (36/45)'
+    - 'Receiving objects:  82% (37/45)'
+    - 'Receiving objects:  84% (38/45)'
+    - 'Receiving objects:  86% (39/45)'
+    - 'Receiving objects:  88% (40/45)'
+    - 'Receiving objects:  91% (41/45)'
+    - 'Receiving objects:  93% (42/45)'
+    - 'Receiving objects:  95% (43/45)'
+    - 'Receiving objects:  97% (44/45)'
+    - 'Receiving objects: 100% (45/45)'
+    - 'Receiving objects: 100% (45/45), 24.03 KiB | 745.00 KiB/s, done.'
+    - 'Resolving deltas:   0% (0/36)'
+    - 'Resolving deltas:   2% (1/36)'
+    - 'Resolving deltas:   5% (2/36)'
+    - 'Resolving deltas:   8% (3/36)'
+    - 'Resolving deltas:  11% (4/36)'
+    - 'Resolving deltas:  13% (5/36)'
+    - 'Resolving deltas:  16% (6/36)'
+    - 'Resolving deltas:  19% (7/36)'
+    - 'Resolving deltas:  22% (8/36)'
+    - 'Resolving deltas:  25% (9/36)'
+    - 'Resolving deltas:  27% (10/36)'
+    - 'Resolving deltas:  30% (11/36)'
+    - 'Resolving deltas:  33% (12/36)'
+    - 'Resolving deltas:  36% (13/36)'
+    - 'Resolving deltas:  38% (14/36)'
+    - 'Resolving deltas:  41% (15/36)'
+    - 'Resolving deltas:  44% (16/36)'
+    - 'Resolving deltas:  47% (17/36)'
+    - 'Resolving deltas:  50% (18/36)'
+    - 'Resolving deltas:  52% (19/36)'
+    - 'Resolving deltas:  55% (20/36)'
+    - 'Resolving deltas:  58% (21/36)'
+    - 'Resolving deltas:  61% (22/36)'
+    - 'Resolving deltas:  63% (23/36)'
+    - 'Resolving deltas:  66% (24/36)'
+    - 'Resolving deltas:  69% (25/36)'
+    - 'Resolving deltas:  72% (26/36)'
+    - 'Resolving deltas:  75% (27/36)'
+    - 'Resolving deltas:  77% (28/36)'
+    - 'Resolving deltas:  80% (29/36)'
+    - 'Resolving deltas:  83% (30/36)'
+    - 'Resolving deltas:  86% (31/36)'
+    - 'Resolving deltas:  88% (32/36)'
+    - 'Resolving deltas:  91% (33/36)'
+    - 'Resolving deltas:  94% (34/36)'
+    - 'Resolving deltas:  97% (35/36)'
+    - 'Resolving deltas: 100% (36/36)'
+    - 'Resolving deltas: 100% (36/36), done.'
+    stdout_lines: []
+-   command: git -C /tmp/tmp4xl1j26n/scm_testing branch -a
+    return_code: 0
+    stderr_lines: []
+    stdout_lines:
+    - '* main'
+    - '  remotes/origin/HEAD -> origin/main'
+    - '  remotes/origin/ansible-localhost-2022-06-05T153456.219194+0000'
+    - '  remotes/origin/ansible-localhost-2022-06-07T123730.364737+0000'
+    - '  remotes/origin/ansible-localhost-2022-06-07T124243.318947+0000'
+    - '  remotes/origin/ansible-localhost-2022-06-08T071446.140280-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T071633.254577-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T102013.660657-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T105116.409325-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T111648.224739-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T111724.998653-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T111743.552733-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T115658.088120-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T115714.338961-0700'
+    - '  remotes/origin/ansible-localhost-2022-06-08T141340.539776+0000'
+    - '  remotes/origin/main'
+-   command: git -C /tmp/tmp4xl1j26n/scm_testing checkout -t -b ansible-localhost-2022-06-08T115734.153818-0700
+    return_code: 0
+    stderr_lines:
+    - Switched to a new branch 'ansible-localhost-2022-06-08T115734.153818-0700'
+    stdout_lines:
+    - branch 'ansible-localhost-2022-06-08T115734.153818-0700' set up to track 'main'.
+-   command: git -C /tmp/tmp4xl1j26n/scm_testing remote add upstream git@github.com:ansible-network/scm_testing.git
+    return_code: 0
+    stderr_lines: []
+    stdout_lines: []
+-   command: git -C /tmp/tmp4xl1j26n/scm_testing pull upstream main --rebase
+    return_code: 0
+    stderr_lines:
+    - From github.com:ansible-network/scm_testing
+    - ' * branch            main       -> FETCH_HEAD'
+    - ' * [new branch]      main       -> upstream/main'
+    stdout_lines:
+    - Updating 17212e0..6abefd2
+    - Fast-forward
+    - ' README.md | 4 ++++'
+    - ' 1 file changed, 4 insertions(+)'
+path: /tmp/tmp4xl1j26n/scm_testing
